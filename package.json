@@ -23,6 +23,7 @@
     "rfc": "./bin/rfc.js"
   },
   "devDependencies": {
+    "prettier": "2.0.2",
     "typescript": "^3.8.3"
   },
   "scripts": {
