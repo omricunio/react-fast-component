@@ -1,4 +1,4 @@
-import { ComponentLanguages, ComponentModels, ComponentStyles, ValidatedQuery, ListQuery } from "config/interfaces"
+import { ComponentLanguages, ComponentModels, ComponentStyles, ValidatedQuery, ListQuery } from "config/interfaces";
 import { OPTION_VALUES, COMMANDS } from "config/arguments";
 import { NAME_QUERY, LANGUAGE_QUERY, TYPE_QUERY, STYLE_QUERY, OUTPUT_QUERY } from "config/queries";
 import { ParsedArgs } from "minimist";
@@ -14,12 +14,12 @@ const attributeToOptions: Record<string, string[]> = {
 
     [ComponentModels.ClassComponent]: [classComponent.short, classComponent.long],
     [ComponentModels.FunctionalComponent]: [functional.short, functional.long],
-    
+
     [ComponentStyles.CSS]: [css.short, css.long],
     [ComponentStyles.MaterialJSS]: [materialjss.short, materialjss.long],
     [ComponentStyles.SASS]: [materialjss.short, materialjss.long],
     [ComponentStyles.StyledComponents]: [styledcomponents.short, styledcomponents.long]
-}
+};
 
 export const buildComponentByArguments = (args: ParsedArgs) => {
     let nameQuery: ValidatedQuery = Object.create(NAME_QUERY);
@@ -29,18 +29,16 @@ export const buildComponentByArguments = (args: ParsedArgs) => {
     let outputQuery: ListQuery = Object.create(OUTPUT_QUERY);
 
     const queries = [nameQuery, languageQuery, typeQuery, styleQuery, outputQuery];
-    if(Object.keys(args).length > 1) {
+    if (Object.keys(args).length > 1) {
         console.log("para");
-    }
-    else
-    {
-        const language = args._[0]
-        if(language === typescript.short || language === typescript.long) {
+    } else {
+        const language = args._[0];
+        if (language === typescript.short || language === typescript.long) {
             languageQuery.answer = ComponentLanguages.TypeScript;
-        }        
+        }
     }
 
     nameQuery.answer = args._[1];
     const componentType = selectComponentType(queries);
     componentType?.handler(queries, componentType.folderPath);
-}
+};

@@ -11,7 +11,7 @@ export const COMMANDS = {
         long: "wizard",
         short: "wiz"
     }
-}
+};
 
 export const OPTIONS = {
     type: {
@@ -26,7 +26,7 @@ export const OPTIONS = {
         short: "d",
         long: "destination"
     }
-}
+};
 
 export const OPTION_VALUES = {
     styles: {
@@ -67,4 +67,4 @@ export const OPTION_VALUES = {
             short: "o"
         }
     }
-}
+};

@@ -8,7 +8,7 @@ let OUTPUT_HANDLERS: Record<string, (folderPath: string) => Promise<void>> = {};
 OUTPUT_HANDLERS[OutputOptions.OpenOutputFolder] = async () => {
     await new Promise((resolve) => {
         openFileExplorer(COMPONENT_OUT_FOLDER, () => {
-            resolve()
+            resolve();
         });
     });
 };

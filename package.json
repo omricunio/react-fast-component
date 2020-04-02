@@ -1,39 +1,39 @@
 {
-  "name": "react-fast-component",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "@types/chalk": "^2.2.0",
-    "@types/figlet": "^1.2.0",
-    "@types/fs-extra": "^8.1.0",
-    "@types/inquirer": "^6.5.0",
-    "@types/lodash": "^4.14.149",
-    "@types/minimist": "^1.2.0",
-    "chalk": "^3.0.0",
-    "figlet": "^1.3.0",
-    "fs-extra": "^9.0.0",
-    "inquirer": "^7.1.0",
-    "lodash": "^4.17.15",
-    "minimist": "^1.2.5",
-    "module-alias": "^2.2.2",
-    "open-file-explorer": "^1.0.2"
-  },
-  "bin": {
-    "rfc": "./bin/rfc.js"
-  },
-  "devDependencies": {
-    "prettier": "2.0.2",
-    "typescript": "^3.8.3"
-  },
-  "scripts": {
-    "build": "tsc",
-    "prepare": "npm run build",
-    "start": "tsc && node dist/index.js"
-  },
-  "_moduleDirectories": [
-    "./dist"
-  ],
-  "author": "",
-  "license": "ISC"
+    "name": "react-fast-component",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "@types/chalk": "^2.2.0",
+        "@types/figlet": "^1.2.0",
+        "@types/fs-extra": "^8.1.0",
+        "@types/inquirer": "^6.5.0",
+        "@types/lodash": "^4.14.149",
+        "@types/minimist": "^1.2.0",
+        "chalk": "^3.0.0",
+        "figlet": "^1.3.0",
+        "fs-extra": "^9.0.0",
+        "inquirer": "^7.1.0",
+        "lodash": "^4.17.15",
+        "minimist": "^1.2.5",
+        "module-alias": "^2.2.2",
+        "open-file-explorer": "^1.0.2"
+    },
+    "bin": {
+        "rfc": "./bin/rfc.js"
+    },
+    "devDependencies": {
+        "prettier": "2.0.2",
+        "typescript": "^3.8.3"
+    },
+    "scripts": {
+        "build": "tsc",
+        "prepare": "npm run build",
+        "start": "tsc && node dist/index.js"
+    },
+    "_moduleDirectories": [
+        "./dist"
+    ],
+    "author": "",
+    "license": "ISC"
 }

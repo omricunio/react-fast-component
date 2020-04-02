@@ -19,9 +19,17 @@ const menus = {
         
         ${chalk.blueBright("options:")}
 
-            ${chalk.blueBright(`-${type.short}, --${type.long} `)} ..... component type (${classComponent.long}, ${functional.long}) [${classComponent.short}, ${functional.short}]
-            ${chalk.blueBright(`-${style.short}, --${style.long} `)} ..... component style (${css.long}, ${sass.long}, ${materialjss.long}, ${styledcomponents.long}) [${css.short}, ${sass.short}, ${materialjss.short}, ${styledcomponents.short}]
-            ${chalk.blueBright(`-${destination.short}, --${destination.long} `)} ..... component type (${currentFolder.long}, ${openOutputFolder.long}) [${currentFolder.short}, ${openOutputFolder.short}]
+            ${chalk.blueBright(`-${type.short}, --${type.long} `)} ..... component type (${classComponent.long}, ${
+        functional.long
+    }) [${classComponent.short}, ${functional.short}]
+            ${chalk.blueBright(`-${style.short}, --${style.long} `)} ..... component style (${css.long}, ${
+        sass.long
+    }, ${materialjss.long}, ${styledcomponents.long}) [${css.short}, ${sass.short}, ${materialjss.short}, ${
+        styledcomponents.short
+    }]
+            ${chalk.blueBright(`-${destination.short}, --${destination.long} `)} ..... component type (${
+        currentFolder.long
+    }, ${openOutputFolder.long}) [${currentFolder.short}, ${openOutputFolder.short}]
 
         ${chalk.blueBright("examples:")}
         
@@ -30,10 +38,10 @@ const menus = {
             ${chalk.blueBright(`fc ${javascript.short} MyComponent -${destination.short} ${openOutputFolder.long}`)}
             ${chalk.blueBright(`fc ${javascript.short} MyComponent -${style.short} ${materialjss.short}`)}
     `
-}
+};
 
 const help = (args: Record<string, string>) => {
     console.log(menus.main);
-}
+};
 
 export default help;
