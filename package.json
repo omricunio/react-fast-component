@@ -1,8 +1,12 @@
 {
     "name": "react-fast-component",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "",
     "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/omricunio/react-fast-component.git"
+    },
     "dependencies": {
         "@types/chalk": "^2.2.0",
         "@types/figlet": "^1.2.0",
