@@ -1,7 +1,9 @@
 
+
 # React Fast Component
 Easy to use CLI which helps you create react components using customizable options
 
+    npm i -g react-fast-component
     rfc wiz
 ![enter image description here](https://raw.githubusercontent.com/omricunio/react-fast-component/master/componentswizard.png)    
 ## Usage
