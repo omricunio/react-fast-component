@@ -6,8 +6,9 @@ import styles from "./COMPONENT_NAME.styles";
 
 class COMPONENT_NAME extends Component {
     render() {
+        const { classes } = this.props;
         return (
-            <div>          
+            <div className={classes.root}>          
             </div>
         );
     }
