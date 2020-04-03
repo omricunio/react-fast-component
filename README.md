@@ -3,8 +3,7 @@
 Easy to use CLI which helps you create react components using customizable options
 
     rfc wiz
-
-![enter image description here](https://raw.githubusercontent.com/omricunio/react-fast-component/master/wizard.png)
+![enter image description here](https://raw.githubusercontent.com/omricunio/react-fast-component/master/componentswizard.png)    
 ## Usage
     rfc [command] [component-name] <options>
     
@@ -26,5 +25,3 @@ Easy to use CLI which helps you create react components using customizable optio
                 [**css, sass, jss, styled**]
                 
 **-d, --destination** - where to save the component, current folder or open the output-folder (**currentfolder, open**) [**c, o**]
-    
-
