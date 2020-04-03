@@ -8,7 +8,9 @@ Easy to use CLI which helps you create react components using customizable optio
 ### Commands:
 
 **wiz**- opens the component creator wizard, **recommended**.
+
 **js**- creates a React JavaScript component.
+
 **ts**- creates a React TypeScript component.
 
 > **Tip:** use **rfc wiz** to explore all of the options.
