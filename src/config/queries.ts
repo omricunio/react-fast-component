@@ -19,7 +19,7 @@ import {
 export const NAME_QUERY: ValidatedQuery = {
     name: QueryNames.componentName,
     type: InputTypes.input,
-    message: "Enter your component name",
+    message: "✏️  Enter your component name",
     validate: (value: string) => {
         if (value.length <= 0) {
             return "Please enter a valid component name";
@@ -31,7 +31,7 @@ export const NAME_QUERY: ValidatedQuery = {
 export const LANGUAGE_QUERY: ListQuery = {
     name: QueryNames.componentLanguage,
     type: InputTypes.list,
-    message: "Please choose a language for your component",
+    message: "📄 Please choose a language for your component",
     options: [ComponentLanguages.TypeScript, ComponentLanguages.JavaScript],
     answer: DEFAULT_COMPONENT_LANGUAGE
 };
@@ -39,7 +39,7 @@ export const LANGUAGE_QUERY: ListQuery = {
 export const TYPE_QUERY: ListQuery = {
     name: QueryNames.componentType,
     type: InputTypes.list,
-    message: "Please choose a component type",
+    message: "⚙️  Please choose a component type",
     options: [ComponentModels.FunctionalComponent, ComponentModels.ClassComponent],
     answer: DEFAULT_COMPONENT_MODEL
 };
@@ -47,7 +47,7 @@ export const TYPE_QUERY: ListQuery = {
 export const STYLE_QUERY: ListQuery = {
     name: QueryNames.componentStyle,
     type: InputTypes.list,
-    message: "Please choose your component style",
+    message: "🖌  Please choose your component style",
     options: [
         ComponentStyles.MaterialJSS,
         ComponentStyles.StyledComponents,
@@ -61,7 +61,7 @@ export const STYLE_QUERY: ListQuery = {
 export const OUTPUT_QUERY: ListQuery = {
     name: QueryNames.outputQuery,
     type: InputTypes.list,
-    message: "Where do you want to save the component?",
+    message: "💾 Where do you want to save the component?",
     options: [OutputOptions.OpenOutputFolder, OutputOptions.SaveInsideCurrentFolder],
     answer: DEFAULT_OUTPUT_OPTION
 };

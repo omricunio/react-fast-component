@@ -13,7 +13,7 @@ const { currentFolder, openOutputFolder } = OPTION_VALUES.destination;
 
 const menus = {
     main: `    
-    ${chalk.green("rfc [command] [component-name] <options>")}
+    ${chalk.green("rfc [command] [component-name] <options>")} 👨‍🎨
 
         ${chalk.yellow(wizard.short)} ........ creates a component using the wizard [${wizard.long}]
         ${chalk.blue(javascript.short)} ........ creates a JavaScript component [${javascript.long}]
@@ -21,14 +21,14 @@ const menus = {
         
         ${chalk.blue("options:")}
 
-            ${chalk.blue(`-${type.short}, --${type.long} `)} ..... component type (${classComponent.long}, ${
+            ⚙️  ${chalk.blue(`-${type.short}, --${type.long} `)} ..... component type (${classComponent.long}, ${
         functional.long
     }) [${classComponent.short}, ${functional.short}]
-            ${chalk.blue(`-${style.short}, --${style.long} `)} ..... component style (${css.long}, ${
+            🖌  ${chalk.blue(`-${style.short}, --${style.long} `)} ..... component style (${css.long}, ${
         sass.long
     }, ${materialjss.long}, ${styledcomponents.long})
                 [${css.short}, ${sass.short}, ${materialjss.short}, ${styledcomponents.short}]
-            ${chalk.blue(`-${destination.short}, --${destination.long} `)} ..... component type (${
+            💾 ${chalk.blue(`-${destination.short}, --${destination.long} `)} ..... component destination (${
         currentFolder.long
     }, ${openOutputFolder.long}) [${currentFolder.short}, ${openOutputFolder.short}]
 
