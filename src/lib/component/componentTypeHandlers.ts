@@ -1,4 +1,4 @@
-import { QueryType, QueryNames } from "config/interfaces";
+import { QueryType, QueryNames } from "../../config/interfaces";
 import {
     copyFolder,
     recursiveGetAllFiles,
@@ -8,9 +8,9 @@ import {
     deleteFile,
     joinPath,
     emptyFolder
-} from "lib/file/fileMethods";
-import { COMPONENT_NAME, COMPONENT_OUT_FOLDER } from "config/components";
-import TextFile from "lib/file/TextFile";
+} from "../../lib/file/fileMethods";
+import { COMPONENT_NAME, COMPONENT_OUT_FOLDER } from "../../config/components";
+import TextFile from "../../lib/file/TextFile";
 import OUTPUT_HANDLERS from "./outputHandlers";
 
 export async function baseComponentTypeHandler(queries: QueryType[], folderPath: string) {

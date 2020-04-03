@@ -1,9 +1,9 @@
 import _ from "lodash";
-import { ComponentLanguages, ComponentModels, ComponentStyles, ValidatedQuery, ListQuery, OutputOptions, ComponentAttribute } from "config/interfaces";
-import { OPTION_VALUES, COMMANDS, OPTIONS } from "config/arguments";
-import { NAME_QUERY, LANGUAGE_QUERY, TYPE_QUERY, STYLE_QUERY, OUTPUT_QUERY } from "config/queries";
+import { ComponentLanguages, ComponentModels, ComponentStyles, ValidatedQuery, ListQuery, OutputOptions, ComponentAttribute } from "../../config/interfaces";
+import { OPTION_VALUES, COMMANDS, OPTIONS } from "../../config/arguments";
+import { NAME_QUERY, LANGUAGE_QUERY, TYPE_QUERY, STYLE_QUERY, OUTPUT_QUERY } from "../../config/queries";
 import { ParsedArgs } from "minimist";
-import { selectComponentType } from "lib/component/componentTypeSelector";
+import { selectComponentType } from "../../lib/component/componentTypeSelector";
 import { CliProgram } from "./interfaces";
 import chalk from "chalk";
 

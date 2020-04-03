@@ -1,6 +1,6 @@
 import inquirer from "inquirer";
-import { QUERIES } from "config/queries";
-import { Query, QueryType } from "config/interfaces";
+import { QUERIES } from "../../config/queries";
+import { Query, QueryType } from "../../config/interfaces";
 
 export async function askComponentOptions(): Promise<QueryType[]> {
     const questions: inquirer.Answers[] = [];

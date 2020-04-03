@@ -1,6 +1,6 @@
-import { QueryType, QueryNames, ComponentType } from "config/interfaces";
+import { QueryType, ComponentType } from "../../config/interfaces";
 import _ from "lodash";
-import { COMPONENT_TYPES } from "config/components";
+import { COMPONENT_TYPES } from "../../config/components";
 
 function getComponentTypeByAttributes(attributes: string[]): ComponentType | null {
     for (const componentType of COMPONENT_TYPES) {

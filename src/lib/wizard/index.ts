@@ -1,7 +1,7 @@
-import { QueryType } from "config/interfaces";
+import { QueryType } from "../../config/interfaces";
 import { askComponentOptions } from "./inquirer";
-import { selectComponentType } from "lib/component/componentTypeSelector";
-import { CliProgram } from "lib/cli/interfaces";
+import { selectComponentType } from "../../lib/component/componentTypeSelector";
+import { CliProgram } from "../../lib/cli/interfaces";
 import chalk from "chalk";
 import figlet from "figlet";
 

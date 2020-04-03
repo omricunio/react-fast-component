@@ -1,5 +1,5 @@
 import chalk from "chalk";
-import { COMMANDS, OPTIONS, OPTION_VALUES } from "config/arguments";
+import { COMMANDS, OPTIONS, OPTION_VALUES } from "../../config/arguments";
 import { CliProgram } from "./interfaces";
 import figlet from "figlet";
 

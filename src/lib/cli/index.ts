@@ -1,7 +1,5 @@
 import minimist from "minimist";
 import programs from "./programs";
-import chalk from "chalk";
-import figlet from "figlet";
 
 async function cli(argsArr: string[]) {
     const args = minimist(argsArr.slice(2));

@@ -1,5 +1,5 @@
 import { ComponentStyles, ComponentModels, ComponentType, ComponentLanguages } from "./interfaces";
-import { baseComponentTypeHandler } from "lib/component/componentTypeHandlers";
+import { baseComponentTypeHandler } from "../lib/component/componentTypeHandlers";
 
 export const TYPESCRIPT_FUNCTIONAL_MATERIAL: ComponentType = {
     attributes: [ComponentLanguages.TypeScript, ComponentModels.FunctionalComponent, ComponentStyles.MaterialJSS],

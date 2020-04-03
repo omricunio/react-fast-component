@@ -1,6 +1,6 @@
 {
     "name": "react-fast-component",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "",
     "main": "index.js",
     "repository": {
@@ -20,7 +20,6 @@
         "inquirer": "^7.1.0",
         "lodash": "^4.17.15",
         "minimist": "^1.2.5",
-        "module-alias": "^2.2.2",
         "open-file-explorer": "^1.0.2"
     },
     "bin": {
@@ -35,9 +34,6 @@
         "prepare": "npm run build",
         "start": "tsc && node dist/index.js"
     },
-    "_moduleDirectories": [
-        "./dist"
-    ],
     "author": "",
     "license": "ISC"
 }

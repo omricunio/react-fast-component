@@ -1,5 +1,4 @@
 import { ComponentType, ComponentLanguages, ComponentModels, ComponentStyles, OutputOptions } from "./interfaces";
-import { baseComponentTypeHandler } from "lib/component/componentTypeHandlers";
 import * as COMPONENT_TYPES_ALL from "./componentTypes";
 
 const COMPONENT_TYPES_OBJECT = COMPONENT_TYPES_ALL as Record<string, ComponentType>;
