@@ -50,9 +50,11 @@ export interface ListQuery extends Query {
 }
 
 export interface ComponentType {
-    attributes: string[];
+    attributes: ComponentAttribute[];
     folderPath: string;
-    handler: (queries: QueryType[], folderPath: string) => void;
+    handler: (queries: QueryType[], folderPath: string) => Promise<void>;
 }
 
 export type QueryType = Query | ValidatedQuery | ListQuery;
+
+export type ComponentAttribute = ComponentLanguages | ComponentModels | ComponentStyles | OutputOptions

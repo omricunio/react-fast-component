@@ -30,5 +30,5 @@ export async function baseComponentTypeHandler(queries: QueryType[], folderPath:
 
     const componentOutputQuery = queries.find((query) => query.name === QueryNames.outputQuery);
     const outputOption = componentOutputQuery!.answer!;
-    OUTPUT_HANDLERS[outputOption](newFolderPath);
+    await OUTPUT_HANDLERS[outputOption](newFolderPath);
 }

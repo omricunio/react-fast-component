@@ -11,6 +11,6 @@ export const COMPONENT_OUT_FOLDER = "components-out";
 export const DEFAULT_COMPONENT_LANGUAGE = ComponentLanguages.JavaScript;
 export const DEFAULT_COMPONENT_MODEL = ComponentModels.ClassComponent;
 export const DEFAULT_COMPONENT_STYLES = ComponentStyles.NoStyles;
-export const DEFAULT_OUTPUT_OPTION = OutputOptions.SaveInsideCurrentFolder;
+export const DEFAULT_OUTPUT_OPTION = OutputOptions.OpenOutputFolder;
 
 export const COMPONENT_TYPES: ComponentType[] = Object.values(COMPONENT_TYPES_OBJECT);
