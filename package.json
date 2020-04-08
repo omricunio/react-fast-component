@@ -22,6 +22,20 @@
         "minimist": "^1.2.5",
         "open-file-explorer": "^1.0.2"
     },
+    "keywords": [
+        "cli",
+        "tool",
+        "react",
+        "react.js",
+        "component",
+        "react-component",
+        "generator",
+        "fast-component",
+        "react-component-maker",
+        "css",
+        "front-end",
+        "wizard"
+    ],
     "bin": {
         "rfc": "./bin/rfc.js"
     },
@@ -34,6 +48,6 @@
         "prepare": "npm run build",
         "start": "tsc && node dist/index.js"
     },
-    "author": "",
+    "author": "Omri Cunio",
     "license": "ISC"
 }
