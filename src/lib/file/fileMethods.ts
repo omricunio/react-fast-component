@@ -4,18 +4,25 @@ import TextFile from "./TextFile";
 import { getRelativePath } from "./utils";
 
 export async function copyFolder(folderPath: string, newFolderPath: string) {
-    folderPath = getRelativePath​​(folderPath);
+    folderPath = getRelativePath(folderPath);
     newFolderPath = getRelativePath(newFolderPath);
     await fse.copy(folderPath, newFolderPath);
 }
 
 export async function copyToRunFolder(folderPath: string) {
-    await fse.copy(getRelativePath​​(folderPath), joinPath(process.cwd(), getFolderNameByPath(folderPath)));
+    await fse.copy(getRelativePath(folderPath), joinPath(process.cwd(), getFolderNameByPath(folderPath)));
+}
+
+export async function checkIfFolderExistsOnRun(folderPath: string): Promise<boolean> {
+    if(await fse.pathExists(joinPath(process.cwd(), getFolderNameByPath(folderPath)))) {
+        return true;
+    }   
+    return false;
 }
 
 export async function recursiveGetAllFiles(folderPath: string): Promise<string[]> {
     const files: string[] = [];
-    const filesAndFolders = await fse.readdir(getRelativePath​​(folderPath));
+    const filesAndFolders = await fse.readdir(getRelativePath(folderPath));
     for (const fileOrFolderName of filesAndFolders) {
         const fileOrFolderPath = path.join(folderPath, fileOrFolderName);
         if ((await fse.lstat(getRelativePath(fileOrFolderPath))).isDirectory()) {
@@ -28,7 +35,7 @@ export async function recursiveGetAllFiles(folderPath: string): Promise<string[]
 }
 
 export async function readFile(filePath: string): Promise<TextFile> {
-    filePath = getRelativePath​​(filePath);
+    filePath = getRelativePath(filePath);
     const fileName = path.basename(filePath);
     try {
         const data = await fse.readFile(filePath, "utf-8");
@@ -39,17 +46,17 @@ export async function readFile(filePath: string): Promise<TextFile> {
 }
 
 export async function deleteFile(filePath: string) {
-    filePath = getRelativePath​​(filePath);
+    filePath = getRelativePath(filePath);
     await fse.remove(filePath);
 }
 
 export async function emptyFolder(folderPath: string) {
-    folderPath = getRelativePath​​(folderPath);
+    folderPath = getRelativePath(folderPath);
     await fse.emptyDir(folderPath);
 }
 
 export async function saveFile(folderPath: string, file: TextFile) {
-    folderPath = getRelativePath​​(folderPath);
+    folderPath = getRelativePath(folderPath);
     const newFilePath = path.join(folderPath, file.name);
     await fse.writeFile(newFilePath, file.data);
 }

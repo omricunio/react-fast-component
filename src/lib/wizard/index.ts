@@ -9,7 +9,7 @@ async function startWizard() {
     console.log(chalk.green(figlet.textSync("Fast Component")));
     const queries: QueryType[] = await askComponentOptions();
     const componentType = selectComponentType(queries);
-    componentType?.handler(queries, componentType.folderPath);
+    await componentType?.handler(queries, componentType.folderPath);
 }
 
 const startWizardProgram: CliProgram = {

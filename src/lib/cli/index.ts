@@ -20,7 +20,13 @@ async function cli(argsArr: string[]) {
         cmd = "help";
     }
 
-    await programs[cmd].handler(args);
+    try {
+        await programs[cmd].handler(args);
+    }
+    catch(e) {
+        console.log(e.message);
+    }
+    
 };
 
 export default cli;
