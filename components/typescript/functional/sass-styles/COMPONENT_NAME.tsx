@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-import "./COMPONENT_NAME.styles.scss";
+import styles from "./COMPONENT_NAME.module.scss";
 
 const COMPONENT_NAME: FunctionComponent = () => {
     return (

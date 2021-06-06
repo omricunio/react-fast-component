@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./styles.styles.scss";
+import styles from "./COMPONENT_NAME.module.scss";
 
 const COMPONENT_NAME = () => {
     return (
-        <div>
+        <div className={styles.root}>
         </div>
     );
 };

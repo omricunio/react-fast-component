@@ -1,6 +1,6 @@
 {
     "name": "react-fast-component",
-    "version": "1.0.7",
+    "version": "1.0.9",
     "description": "",
     "main": "index.js",
     "repository": {
@@ -40,6 +40,7 @@
         "rfc": "./bin/rfc.js"
     },
     "devDependencies": {
+        "@types/node": "^15.12.1",
         "prettier": "2.0.2",
         "typescript": "^3.8.3"
     },
